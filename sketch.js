@@ -22,7 +22,7 @@ let message = 1;
 let startup = false;
 
 function preload() {
-	Static = loadImage("./libraries/assets/static.gif");
+	Static = loadImage("libraries/assets/static.gif");
 
 	AJ_Image = loadImage("./libraries/assets/Al_Jolson.png");
 	BS_Image = loadImage("./libraries/assets/Bessie_Smith.png");
