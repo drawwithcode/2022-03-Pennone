@@ -93,7 +93,7 @@ function draw() {
 	image(BS_Image, width/2 - BS_Image.width * Image_Scale/1.2 * (Image_Scale*1.3), height - BS_Image.height * (Image_Scale*1.1), BS_Image.width * (Image_Scale*1.3), BS_Image.height * (Image_Scale*1.3));
 
 	//prendere le misure
-	fill(255, 255, 255, 100);
+	//fill(255, 255, 255, 100);
 	//circle(MS_Image.width / 1.35 * (Image_Scale*2.5), MS_Image.height / 3 * (Image_Scale*2.5), 100);
 	//circle(BL_Image.width / 2.5 * (Image_Scale*2), height - (BL_Image.height * Image_Scale) + BL_Image.height / 3.9 * (Image_Scale*2), 100);
 	//circle(width - (VD_Image.width * Image_Scale*1.7) + VD_Image.width / 2 * (Image_Scale*1.7), -75 + VD_Image.height / 3.5 * (Image_Scale*1.7), 100);
