@@ -22,25 +22,25 @@ let message;
 let startup = false;
 
 function preload() {
-	Static = loadImage("./assets/static.gif");
+	Static = loadImage("blob/main/assets/static.gif");
 
-	AJ_Image = loadImage("./assets/Al_Jolson.png");
-	BS_Image = loadImage("./assets/Bessie_Smith.png");
-	BL_Image = loadImage("./assets/Blind_Lemon.png");
-	MS_Image = loadImage("./assets/Mamie_Smith.png");
-	VD_Image = loadImage("./assets/Vernon_Dalhart.png");
+	AJ_Image = loadImage("blob/main/assets/Al_Jolson.png");
+	BS_Image = loadImage("blob/main/assets/Bessie_Smith.png");
+	BL_Image = loadImage("blob/main/assets/Blind_Lemon.png");
+	MS_Image = loadImage("blob/main/assets/Mamie_Smith.png");
+	VD_Image = loadImage("blob/main/assets/Vernon_Dalhart.png");
 
-	Lips = loadImage("./assets/Lips.gif");
-	Sing = loadImage("./assets/Sing.gif");
+	Lips = loadImage("blob/main/assets/Lips.gif");
+	Sing = loadImage("blob/main/assets/Sing.gif");
 
-	AJ_Song = loadSound("./assets/Al_Jolson.ogg");
-	BS_Song = loadSound("./assets/Bessie_Smith.ogg");
-	BL_Song = loadSound("./assets/Blind_Lemon.ogg");
-	MS_Song = loadSound("./assets/Mamie_Smith.ogg");
-	VD_Song = loadSound("./assets/Vernon_Dalhart.ogg");
+	AJ_Song = loadSound("blob/main/assets/Al_Jolson.ogg");
+	BS_Song = loadSound("blob/main/assets/Bessie_Smith.ogg");
+	BL_Song = loadSound("blob/main/assets/Blind_Lemon.ogg");
+	MS_Song = loadSound("blob/main/assets/Mamie_Smith.ogg");
+	VD_Song = loadSound("blob/main/assets/Vernon_Dalhart.ogg");
 
-	Static_Sound = loadSound("./assets/Static.ogg");
-	Waiting = loadSound("./assets/Waiting.ogg");
+	Static_Sound = loadSound("blob/main/assets/Static.ogg");
+	Waiting = loadSound("blob/main/assets/Waiting.ogg");
 
 
 }
