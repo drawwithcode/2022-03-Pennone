@@ -1,24 +1,24 @@
-let AJ_Song;
-let BS_Song;
-let BL_Song;
-let MS_Song;
-let VD_Song;
+let AJ_Song = 1;
+let BS_Song = 1;
+let BL_Song = 1;
+let MS_Song = 1;
+let VD_Song = 1;
 
-let AJ_Image;
-let BS_Image;
-let BL_Image;
-let MS_Image;
-let VD_Image;
+let AJ_Image = 1;
+let BS_Image = 1;
+let BL_Image = 1;
+let MS_Image = 1;
+let VD_Image = 1;
 
-let Lips;
-let Sing;
+let Lips = 1;
+let Sing = 1;
 
-let Waiting;
+let Waiting = 1;
 
 let Static = [];
-let Static_Sound;
+let Static_Sound = 1;
 
-let message;
+let message = 1;
 let startup = false;
 
 function preload() {
