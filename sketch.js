@@ -64,6 +64,8 @@ function setup() {
 
 function draw() {
 
+	console.log("non funziona boh");
+
 	for(let i = 0; i < windowHeight; i += Static.height){
 		for(let j = 0; j < windowWidth; j += Static.width){
 			image(Static, j, i, Static.width, Static.height);
