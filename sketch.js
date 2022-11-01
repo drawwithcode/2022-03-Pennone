@@ -22,25 +22,25 @@ let message;
 let startup = false;
 
 function preload() {
-	Static = loadImage("./assets/static.gif");
+	Static = loadImage("assets/static.gif");
 
-	AJ_Image = loadImage("./assets/Al_Jolson.png");
-	BS_Image = loadImage("./assets/Bessie_Smith.png");
-	BL_Image = loadImage("./assets/Blind_Lemon.png");
-	MS_Image = loadImage("./assets/Mamie_Smith.png");
-	VD_Image = loadImage("./assets/Vernon_Dalhart.png");
+	AJ_Image = loadImage("assets/Al_Jolson.png");
+	BS_Image = loadImage("assets/Bessie_Smith.png");
+	BL_Image = loadImage("assets/Blind_Lemon.png");
+	MS_Image = loadImage("assets/Mamie_Smith.png");
+	VD_Image = loadImage("assets/Vernon_Dalhart.png");
 
-	Lips = loadImage("./assets/Lips.gif");
-	Sing = loadImage("./assets/Sing.gif");
+	Lips = loadImage("assets/Lips.gif");
+	Sing = loadImage("assets/Sing.gif");
 
-	AJ_Song = loadSound("./assets/Al_Jolson.ogg");
-	BS_Song = loadSound("./assets/Bessie_Smith.ogg");
-	BL_Song = loadSound("./assets/Blind_Lemon.ogg");
-	MS_Song = loadSound("./assets/Mamie_Smith.ogg");
-	VD_Song = loadSound("./assets/Vernon_Dalhart.ogg");
+	AJ_Song = loadSound("assets/Al_Jolson.ogg");
+	BS_Song = loadSound("assets/Bessie_Smith.ogg");
+	BL_Song = loadSound("assets/Blind_Lemon.ogg");
+	MS_Song = loadSound("assets/Mamie_Smith.ogg");
+	VD_Song = loadSound("assets/Vernon_Dalhart.ogg");
 
-	Static_Sound = loadSound("./assets/Static.ogg");
-	Waiting = loadSound("./assets/Waiting.ogg");
+	Static_Sound = loadSound("assets/Static.ogg");
+	Waiting = loadSound("assets/Waiting.ogg");
 
 
 }
@@ -108,22 +108,27 @@ function draw() {
 			image(Sing, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
 			MS_Song.setVolume(0.7);
 			Static_Sound.setVolume(0.1);
+			Waiting.setVolume(0);
 		} else if(mouseX >= BL_Image.width / 2.5 * (Image_Scale*2) - 50 && mouseX <= BL_Image.width / 2.5 * (Image_Scale*2) + 50 && mouseY >= height - (BL_Image.height * Image_Scale) + BL_Image.height / 3.9 * (Image_Scale*2) - 50 && mouseY <= height - (BL_Image.height * Image_Scale) + BL_Image.height / 3.9 * (Image_Scale*2) + 50) {
 			image(Sing, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
 			BL_Song.setVolume(0.7);
 			Static_Sound.setVolume(0.1);
+			Waiting.setVolume(0);
 		} else if (mouseX >= width - (VD_Image.width * Image_Scale*1.7) + VD_Image.width / 2 * (Image_Scale*1.7) - 50 && mouseX <= width - (VD_Image.width * Image_Scale*1.7) + VD_Image.width / 2 * (Image_Scale*1.7) + 50 && mouseY >= -75 + VD_Image.height / 3.5 * (Image_Scale*1.7) - 50 && mouseY <= -75 + VD_Image.height / 3.5 * (Image_Scale*1.7) + 50) {
 			image(Sing, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
 			VD_Song.setVolume(0.7);
 			Static_Sound.setVolume(0.1);
+			Waiting.setVolume(0);
 		} else if (mouseX >= width/2 - BS_Image.width * Image_Scale/1.2 * (Image_Scale*1.3) + BS_Image.width / 1.75 * (Image_Scale*1.3) - 50 && mouseX <= width/2 - BS_Image.width * Image_Scale/1.2 * (Image_Scale*1.3) + BS_Image.width / 1.75 * (Image_Scale*1.3) + 50 && mouseY >= height - BS_Image.height * (Image_Scale*1.1) + BS_Image.height / 2 * (Image_Scale*1.3) - 50 && mouseY <= height - BS_Image.height * (Image_Scale*1.1) + BS_Image.height / 2 * (Image_Scale*1.3) + 50) {
 			image(Sing, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
 			BS_Song.setVolume(0.7);
 			Static_Sound.setVolume(0.1);
+			Waiting.setVolume(0);
 		} else if (mouseX >= width - (AJ_Image.width * Image_Scale*0.8) + AJ_Image.width / 2 * (Image_Scale*0.8) - 50 && mouseX <= width - (AJ_Image.width * Image_Scale*0.8) + AJ_Image.width / 2 * (Image_Scale*0.8) + 50 && mouseY >= height - (AJ_Image.height * Image_Scale*0.8) + AJ_Image.height / 1.6 * (Image_Scale*0.8) - 50 && mouseY <= height - (AJ_Image.height * Image_Scale*0.8) + AJ_Image.height / 1.6 * (Image_Scale*0.8) + 50) {
 			image(Sing, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
 			AJ_Song.setVolume(0.7);
 			Static_Sound.setVolume(0.1);
+			Waiting.setVolume(0);
 		} else if (mouseX >= width/3 && mouseX <= width - width/3 && mouseY <= height/2) {
 			image(Lips, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
 			AJ_Song.setVolume(0.7);
