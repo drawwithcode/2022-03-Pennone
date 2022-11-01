@@ -22,25 +22,25 @@ let message = 1;
 let startup = false;
 
 function preload() {
-	Static = loadImage("./assets/static.gif");
+	Static = loadImage("./libraries/assets/static.gif");
 
-	AJ_Image = loadImage("./assets/Al_Jolson.png");
-	BS_Image = loadImage("./assets/Bessie_Smith.png");
-	BL_Image = loadImage("./assets/Blind_Lemon.png");
-	MS_Image = loadImage("./assets/Mamie_Smith.png");
-	VD_Image = loadImage("./assets/Vernon_Dalhart.png");
+	AJ_Image = loadImage("./libraries/assets/Al_Jolson.png");
+	BS_Image = loadImage("./libraries/assets/Bessie_Smith.png");
+	BL_Image = loadImage("./libraries/assets/Blind_Lemon.png");
+	MS_Image = loadImage("./libraries/assets/Mamie_Smith.png");
+	VD_Image = loadImage("./libraries/assets/Vernon_Dalhart.png");
 
-	Lips = loadImage("./assets/Lips.gif");
-	Sing = loadImage("./assets/Sing.gif");
+	Lips = loadImage("./libraries/assets/Lips.gif");
+	Sing = loadImage("./libraries/assets/Sing.gif");
 
-	AJ_Song = loadSound("./assets/Al_Jolson.ogg");
-	BS_Song = loadSound("./assets/Bessie_Smith.ogg");
-	BL_Song = loadSound("./assets/Blind_Lemon.ogg");
-	MS_Song = loadSound("./assets/Mamie_Smith.ogg");
-	VD_Song = loadSound("./assets/Vernon_Dalhart.ogg");
+	AJ_Song = loadSound("./libraries/assets/Al_Jolson.ogg");
+	BS_Song = loadSound("./libraries/assets/Bessie_Smith.ogg");
+	BL_Song = loadSound("./libraries/assets/Blind_Lemon.ogg");
+	MS_Song = loadSound("./libraries/assets/Mamie_Smith.ogg");
+	VD_Song = loadSound("./libraries/assets/Vernon_Dalhart.ogg");
 
-	Static_Sound = loadSound("./assets/Static.ogg");
-	Waiting = loadSound("./assets/Waiting.ogg");
+	Static_Sound = loadSound("./libraries/assets/Static.ogg");
+	Waiting = loadSound("./libraries/assets/Waiting.ogg");
 
 
 }
