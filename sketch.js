@@ -1,22 +1,24 @@
-let AJ_Song = 1;
-let BS_Song = 1;
-let BL_Song = 1;
-let MS_Song = 1;
-let VD_Song = 1;
+let AJ_Song;
+let BS_Song;
+let BL_Song;
+let MS_Song;
+let VD_Song;
 
-let AJ_Image = 1;
-let BS_Image = 1;
-let BL_Image = 1;
-let MS_Image = 1;
-let VD_Image = 1;
+let AJ_Image;
+let BS_Image;
+let BL_Image;
+let MS_Image;
+let VD_Image;
 
-let Lips = 1;
-let Sing = 1;
+let Lips;
+let Sing;
+let Lips2;
+let Sing2;
 
-let Waiting = 1;
+let Waiting;
 
 let Static = [];
-let Static_Sound = 1;
+let Static_Sound;
 
 let message = 1;
 let startup = false;
@@ -32,6 +34,8 @@ function preload() {
 
 	Lips = loadImage("./libraries/assets/Lips.gif");
 	Sing = loadImage("./libraries/assets/Sing.gif");
+	Lips2 = loadImage("./libraries/assets/Lips2.gif");
+	Sing2 = loadImage("./libraries/assets/Sing2.gif");
 
 	AJ_Song = loadSound("./libraries/assets/Al_Jolson.ogg");
 	BS_Song = loadSound("./libraries/assets/Bessie_Smith.ogg");
@@ -107,12 +111,12 @@ function draw() {
 	//rect(mouseX, mouseY, 100);
 	if(startup == true) {
 		if(mouseX >= MS_Image.width / 1.35 * (Image_Scale*2.5) - 50 && mouseX <= MS_Image.width / 1.35 * (Image_Scale*2.5) + 50 && mouseY >= MS_Image.height / 3 * (Image_Scale*2.5) - 50 && mouseY <= MS_Image.height / 3 * (Image_Scale*2.5) + 50){
-			image(Sing, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
+			image(Sing2, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
 			MS_Song.setVolume(0.7);
 			Static_Sound.setVolume(0.1);
 			Waiting.setVolume(0);
 		} else if(mouseX >= BL_Image.width / 2.5 * (Image_Scale*2) - 50 && mouseX <= BL_Image.width / 2.5 * (Image_Scale*2) + 50 && mouseY >= height - (BL_Image.height * Image_Scale) + BL_Image.height / 3.9 * (Image_Scale*2) - 50 && mouseY <= height - (BL_Image.height * Image_Scale) + BL_Image.height / 3.9 * (Image_Scale*2) + 50) {
-			image(Sing, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
+			image(Sing2, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
 			BL_Song.setVolume(0.7);
 			Static_Sound.setVolume(0.1);
 			Waiting.setVolume(0);
@@ -132,7 +136,11 @@ function draw() {
 			Static_Sound.setVolume(0.1);
 			Waiting.setVolume(0);
 		} else if (mouseX >= width/3 && mouseX <= width - width/3 && mouseY <= height/2) {
-			image(Lips, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
+			if (mouseX > width/2) {
+				image(Lips, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
+			} else {
+				image(Lips2, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
+			}
 			AJ_Song.setVolume(0.7);
 			Static_Sound.setVolume(0.3);
 			AJ_Song.setVolume(0);
@@ -142,7 +150,11 @@ function draw() {
 			VD_Song.setVolume(0);
 			Waiting.setVolume(0.7);
 		} else {
-			image(Lips, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
+			if (mouseX > width/2) {
+				image(Lips, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
+			} else {
+				image(Lips2, mouseX - 100 * Image_Scale, mouseY - 100 * Image_Scale, 200 * Image_Scale, 200 * Image_Scale);
+			}
 			AJ_Song.setVolume(0);
 			BS_Song.setVolume(0);
 			BL_Song.setVolume(0);
@@ -151,6 +163,12 @@ function draw() {
 			Static_Sound.setVolume(0.8);
 			Waiting.setVolume(0);
 		}
+	}
+
+	if (mouseX <= width/2) {
+		
+	} else {
+		
 	}
 
 }
